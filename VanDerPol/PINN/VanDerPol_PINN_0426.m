@@ -53,9 +53,9 @@ figure('Name', 'PINN', 'Position', [100, 100, 800, 400]);
 plot(t_meres, x_zajos, 'k', 'LineWidth', 0.5); hold on;
 plot(t_meres, x_tiszta, 'b', 'LineWidth', 2);
 plot(t_meres, x_nn_plot, 'r--', 'LineWidth', 2);
-title('Pozíció (x): Zajos Érték vs. Ideális Érték vs. PINN');
-xlabel('Idő [s]'); ylabel('Pozíció [x]');
-legend('Zajos mért jel', 'Ideális jel', 'PINN');
+title('Position (x): Noisy data vs. Ideal data vs. PINN');
+xlabel('Time [s]'); ylabel('Position [x]');
+legend('Noisy data', 'Ideal data', 'PINN');
 grid on;
 
 function [loss, gradients] = pinnLoss(net, t_dl, x_cel_dl)

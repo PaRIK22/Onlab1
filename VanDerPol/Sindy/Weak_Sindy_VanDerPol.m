@@ -94,3 +94,4 @@ title('3. Gyorsulás');
 xlabel('Idő [s]'); ylabel('Gyorsulás (a)');
 legend('Zajos diff(v)', 'Integrál SINDy');
 grid on;
+exportgraphics(gcf, 'D:\Egyetem\!Msc\1.Félév\Önlab\Matlab\Git\images\WSindy_plot.pdf', 'ContentType', 'vector');
